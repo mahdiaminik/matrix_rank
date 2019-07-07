@@ -1,16 +1,21 @@
+//matrix rank
+//gaussian elimination
+//Mahdi Amini Kahrizsangi
+//مهدی امینی کهریزسنگی
+//mahdiamini@aut.ac.ir
 using System;
-namespace MahdiAmini
+namespace MatrixRankCalculator
 {
     class Program
     {
         static void Main(string[] args)
         {
-			int size = 5;
-			var A = new double[size, size];
+		int size = 5;
+		var A = new double[size, size];
 			
-			//fill matix with random numbers :
-            var rand = new Random();
-            for (int i = 0; i < size; i++)
+		//fill matix with random numbers :
+            	var rand = new Random();
+            	for (int i = 0; i < size; i++)
                 for (int j = 0; j < size; j++)
                     A[i, j] = rand.NextDouble();
 
